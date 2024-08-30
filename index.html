@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+      <h1>Sign Up Form</h1>
+    <form action="something.py" id="registrationForm" onsubmit="return validateForm()">
+        <div class="rows">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" >
+    </div>
+        <div class="rows">
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName">
+        </div>
+        <div class="rows">
+            <label for="userEmail">Email:</label>
+            <input type="email" id="userEmail" name="userEmail">
+        </div>
+        <div class="rows">
+            <label for="userPassword">Password:</label>
+            <input type="password" id="userPassword" name="userPassword">
+        </div>
+        <div class="rows">
+            <label for="userConfirmPassword">Confirm Password:</label>
+            <input type="password" id="userConfirmPassword" name="userConfirmPassword">
+            <input type="checkbox" id="showPassword">
+            <h5>show password</h5>
+           </div>
+           
+        <button id="btn" value="submit" type="submit">SUBMIT</button>
+        <div id="errorMessage"></div>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+
+</html>
